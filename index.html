@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <link href="style.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <header>
+  <h1>freeCodeCamp Survey Form</h1>
+  <p>Thank you for taking time to help us improve the platform</p>
+</header>
+<main>
+  <form action="" method="get">
+    <fieldset>
+      <legend for="name">Name</legend>
+      <input class="largeInput" type="text" id="name" name="user name" placeholder="Enter your name" required>
+    </fieldset>
+
+    <fieldset>
+      <legend for="email">Email</legend>
+      <input class="largeInput" type="email" name="user email" id="email" placeholder="Enter your email" required>
+    </fieldset>
+
+    <fieldset>
+      <legend for="age">Age <span>(optionnal)</span></legend>
+      <input class="largeInput" type="number" id="age" name="user age" min="18" max="99" placeholder="Age">
+    </fieldset>
+
+    <fieldset>
+      <legend for="recommandation">Would you recommend freeCodeCamp to a friend?</legend>
+        <ul class="round">
+          <li>
+            <input type="checkbox" id="definitely" name="recommandation" value="definitely">
+            <label for="definitely">Definitely</label>
+          </li>
+          <li>
+            <input type="checkbox" id="maybe" name="recommandation" value="maybe">
+            <label for="maybe">Maybe</label>
+          </li>
+          <li>
+            <input type="checkbox" id="not-sure" name="recommandation" value="not-sure">
+            <label for="not-sure">Not Sure</label>
+          </li>
+        </ul>
+    </fieldset>
+  
+    <fieldset>
+      <legend for="favFeature">What is your favorite feature of freeCodeCamp?</legend>
+        <select class="largeInput" name="user favorite feature" id="favFeature">
+          <option value="">Select an option</option>
+          <option value="CompletelyFreeCurriculul">Completely Free Curriculum</option>
+          <option value="projectBasedLearning">Hands-On Project-Based Learning</option>
+          <option value="supportiveCommunity">Supportive Community</option>
+          <option value="flexLearning">Flexible Learning Pace</option>
+          <option value="portofolio">Certifications and Portfolio Building</option>
+        </select>
+    </fieldset>
+  
+    <fieldset>
+      <legend for="improvement">What would you like to see improved? <span>(Check all that apply)</span></legend>
+        <ul>
+          <li>
+            <input type="checkbox" id="option1" name="improvement" value="option1">
+            <label for="option1">Front-end Projects</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option2" name="improvement" value="option2">
+            <label for="option2">Back-end Projects</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option3" name="improvement" value="option3">
+            <label for="option3">Data Visualization</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option4" name="improvement" value="option4">
+            <label for="option4">Challenges</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option5" name="improvement" value="option5">
+            <label for="option5">Open Source Community</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option6" name="improvement" value="option6">
+            <label for="option6">Gitter help rooms</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option7" name="improvement" value="option7">
+            <label for="option7">Videos</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option8" name="improvement" value="option8">
+            <label for="option8">City Meetups</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option9" name="improvement" value="option9">
+            <label for="option9">Wiki</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option10" name="improvement" value="option10">
+            <label for="option10">Forum</label>
+          </li>
+          <li>
+            <input type="checkbox" id="option11" name="improvement" value="option11">
+            <label for="option11">Additional Courses</label>
+          </li>
+        </ul>
+    </fieldset>
+  
+    <fieldset>
+      <legend for="suggestion">Any comments or sugestions?</legend>
+      <textarea name="comments" id="comment" rows="5" cols="50">Enter your comment here...</textarea>
+      <label for="comments"></label>
+    </fieldset>
+    <button>Submit</button>
+  </form>
+</main>
+
+
